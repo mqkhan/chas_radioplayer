@@ -13,6 +13,7 @@ async function getChannel() {
     const liEl = document.createElement("li");
     liEl.setAttribute("class", "channel-item");
     ulEl.appendChild(liEl);
+    liEl.style.backgroundColor = "#" + channel.color;
 
     const imageEl = document.createElement("img");
     imageEl.setAttribute("src", `${channel.image}`);
