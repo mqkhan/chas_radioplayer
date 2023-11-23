@@ -24,6 +24,7 @@ body {
   box-shadow: 0 2px 5px rgba(8, 8, 8, 0.3);
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 5px 5px 5px 5px #936868;
 }
 .channel-item img {
   width: 150px;
@@ -42,4 +43,25 @@ h2 {
 }
 audio {
   background-color: red;
+}
+
+@media (max-width: 767px) {
+  .channels-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .channel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px #936868;
+  }
 }
